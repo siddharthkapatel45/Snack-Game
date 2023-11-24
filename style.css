@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+
+    background: url("bg.jpg");
+    height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    
+}
+#board{
+    display: grid;   
+    height:90vh;
+    width: 70vw;
+    border: 2px solid black;
+background: linear-gradient(#96cf96,#e1e152);
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18,1fr);
+    margin-left: 35px;
+    
+
+
+}
+.head{
+   background:linear-gradient(#e95757,#d1d166);
+border-radius: 17px;
+border: 1px solid white;
+   
+}
+.snack{
+
+    background-color: purple;
+    border-radius: 17px;
+border: 1px solid white;
+}
+.food{
+
+   
+    border-radius: 17px;
+    border: 1px solid white;
+
+    background-color: red;
+}
+#score {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width:300px;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: cursive;
+        background: linear-gradient(#5f5656,white);
+    margin-left:16%;
+    margin-bottom: 16%;
+margin-right: 12%;
+border-radius: 23px;
+}
+#text{
+font-size: 24px;
+    text-align: center;
+    border: 2px solid black;
+    margin-bottom: 30%;
+    width:23%;
+    position: relative;
+    left:29%;
+
+}
+@media screen and (max-width: 500px) {
+    #board{
+        display: grid;   
+        height:39vh;
+        width: 90vw;
+        border: 2px solid black;
+    background: linear-gradient(#96cf96,#e1e152);
+        grid-template-rows: repeat(18, 1fr);
+        grid-template-columns: repeat(18,1fr);
+        margin-left: 15px;
+        margin-bottom: 118%;
+    
+    
+    }
+    #score{
+
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width:150px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: cursive;
+        background: linear-gradient(#5f5656,white);
+    margin-left:-63%;
+    margin-bottom: -100%;
+margin-right: 12%;
+border-radius: 23px;
+    }
+   
+   
+  }
+
+
+@media screen and (max-width: 768px) {
+    #board{
+        display: grid;   
+        height:89vh;
+        width: 160vw;
+        border: 2px solid black;
+    background: linear-gradient(#96cf96,#e1e152);
+        grid-template-rows: repeat(18, 1fr);
+        grid-template-columns: repeat(18,1fr);
+        margin-left: 15px;
+        margin-bottom: 4%;
+    
+    
+    }
+    #score{
+
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        width: 246px;
+        height: 49px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 21px;
+        font-family: cursive;
+        background: linear-gradient(#5f5656,white);
+        margin-left: 9%;
+        margin-bottom: 50%;
+        margin-right: 15%;
+        border-radius: -11px;
+    }
+   
+   
+   
+   
+  }
+
+
